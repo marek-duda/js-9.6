@@ -3,8 +3,8 @@ var add = document.getElementById('addElem');
 
 add.addEventListener('click', function() {
     var element = document.createElement('li');
-    var item = document.createTextNode(' item');
-    element.innerHTML = list.childElementCount;
+    var item = document.createTextNode('item ' + list.childElementCount);
     element.appendChild(item);
     list.appendChild(element);
 });
+
